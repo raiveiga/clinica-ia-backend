@@ -12,6 +12,7 @@ const openai = new OpenAI({
 });
 
 app.post('/avaliar', async (req, res) => {
+  console.log('Resposta da OpenAI:', resposta);
   const { sintomas } = req.body;
 
   try {
